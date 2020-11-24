@@ -1,0 +1,200 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path": "pages/login/login",
+		    "style": {
+				"navigationBarTitleText": "登陆",
+				
+				"app-plus": {
+					"bounce":"none",
+					"titleNView": {
+						"autoBackButton": false
+					 }
+				}
+			}
+		},
+		{
+		    "path": "pages/login/forget",
+		    "style": {
+				"navigationBarTitleText": "找回密码",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+		}, {
+		    "path": "pages/login/register",
+		    "style": {
+				"navigationBarTitleText": "注册",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"bounce":"none"
+				}
+				
+			}
+		}
+		,{
+			"path": "pages/kj/kj",
+			"style": {
+				"app-plus": {
+					"bounce":"none"
+				},
+				"navigationBarTitleText": "矿机"
+			}
+		},
+		 {
+			"path": "pages/dynamic/dynamic",
+			"style": {
+				"navigationBarTitleText": "",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+		 },
+		{
+            "path" :  "pages/profile/profile",
+            "style" : {
+				"navigationBarTitleText": "我的",
+				"navigationStyle":"custom",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/profit/profit",
+            "style" : {
+				"navigationBarTitleText": "收益",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/personalData/personalData",
+            "style" : {
+				"navigationBarTitleText": "个人资料",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/password/password",
+            "style" : {
+				"navigationBarTitleText": "修改密码",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/manager/manager",
+            "style" : {
+				"navigationBarTitleText": "资产管理",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/about/about",
+            "style" : {
+				"navigationBarTitleText": "关于我们",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+        ,{
+            "path" : "pages/center/center",
+            "style" : {
+				"navigationBarTitleText": "帮助中心",
+				"app-plus": {
+					"bounce":"none"
+				}
+				// "navigationBarBackgroundColor":"black"
+			}
+        }
+        ,{
+            "path" : "pages/storage/storage",
+            "style" : {
+				"navigationBarTitleText": "存储算力",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+        }
+		,{
+		    "path" : "pages/avatar/avatar",
+		    "style" : {
+				"navigationBarTitleText": "头像上传",
+				"navigationBarTextStyle":"white",
+				"navigationBarBackgroundColor":"#000000",
+				"app-plus": {
+					"bounce":"none"
+				}
+			}
+		}
+       
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#B5B5B5",
+	    "selectedColor": "#333333",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [
+		{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/imgs/tabBar/index.png",
+	        "selectedIconPath": "static/imgs/tabBar/index_1.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/kj/kj",
+	        "iconPath": "./static/imgs/tabBar/kj.png",
+	        "selectedIconPath": "./static/imgs/tabBar/kj_1.png",
+	        "text": "矿机"
+	    },{
+	        "pagePath": "pages/profit/profit",
+	        "iconPath": "static/imgs/tabBar/profit.png",
+	        "selectedIconPath": "static/imgs/tabBar/profit_1.png",
+	        "text": "收益"
+	    },
+		// {
+	 //        "pagePath": "pages/dynamic/dynamic",
+	 //        "iconPath": "static/imgs/tabBar/dynamic.png",
+	 //        "selectedIconPath": "static/imgs/tabBar/dynamic_1.png",
+	 //        "text": "动态"
+	 //    },
+		{
+	        "pagePath": "pages/profile/profile",
+	        "iconPath": "static/imgs/tabBar/profile.png",
+	        "selectedIconPath": "static/imgs/tabBar/profile_1.png",
+	        "text": "我的"
+	    }]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

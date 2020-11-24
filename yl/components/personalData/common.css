@@ -1,0 +1,25 @@
+.list_item{
+		display: flex;
+		border-bottom: 1px solid #F4F4F4;
+		width: 710rpx;
+		height: 100rpx;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 21rpx;
+}
+
+.list_item .item_detail{
+	display: flex;
+	align-items: center;		
+}
+
+.list_item .item_detail image{
+	width: 80rpx;
+	height: 80rpx;
+}
+.list_item .item_detail	.dayu image{
+	width: 13rpx;
+	height: 22rpx;
+	margin-left: 24rpx;
+			
+}	
